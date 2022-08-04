@@ -31,3 +31,5 @@ function dqmaps:removearenawalls()
         end
     end
 end
+
+return dqmaps
