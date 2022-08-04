@@ -11,7 +11,9 @@ local function createWall(cf, sz)
       return part
 end
 
-function removearenawalls()
+local dqmaps = {}
+
+function dqmaps:removearenawalls()
     createWall(CFrame.new(700.780151, 1.08747101, -505.499756, 1, 0, 0, 0, 1, 0, 0, 0, 1),Vector3.new(346, 1, 351))
     createWall(CFrame.new(531.63446, 23.4773884, -555.873901, 0.965907097, -0, -0.25888893, 0, 1, -0, 0.25888893, 0, 0.965907097),Vector3.new(3, 61, 56))
     createWall(CFrame.new(526.166138, 25.7228622, -509.606781, 1, 0, 0, 0, 1, 0, 0, 0, 1),Vector3.new(3, 61, 56))
@@ -44,3 +46,5 @@ function removearenawalls()
         end
     end
 end
+
+return dqmaps
